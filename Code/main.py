@@ -11,4 +11,9 @@ import requests, os
 pause = input('Clique em qualquer tecla para continuar...')
 clear = os.system('cls' if os.name == 'nt' else 'clear')
 
-print('\nConsulta CEP\n\n\n')
+try:
+    print('\nConsulta CEP\n\n\n')
+
+except Exception in e:
+    
+    print(f'Erro: {e}')
