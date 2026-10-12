@@ -21,7 +21,8 @@ try:
     
     data = requests.get(url).json
     
-    print(f'Endereço: {data["logradouro"]} - {data["bairro"]} - {data["cidade"]}/{data["uf"]}')
+    # print(f'Endereço: {data["logradouro"]} - {data["bairro"]} - {data["cidade"]}/{data["uf"]}')
+    print(data["logradouro"])
     
     input('Clique em qualquer tecla para continuar...')
     os.system('cls' if os.name == 'nt' else 'clear')
