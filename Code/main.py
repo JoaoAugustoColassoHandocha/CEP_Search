@@ -16,6 +16,7 @@ try:
     print('\nConsulta CEP\n\n\n')
     
     cep = input('CEP: ')
+    url = f'viacep.com.br/ws/{cep}/json/'
 
 except Exception as error:
     
