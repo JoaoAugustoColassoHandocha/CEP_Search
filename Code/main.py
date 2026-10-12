@@ -18,7 +18,11 @@ try:
     cep = input('CEP: ')
     url = f'viacep.com.br/ws/{cep}/json/'
     
-    data = 
+    clear()
+    
+    data = requests.get(url).json
+    
+    
 
 except Exception as error:
     
