@@ -14,16 +14,14 @@ try:
     
     print('\nConsulta CEP\n\n\n')
     
-    # cep = str(input('CEP: '))
-    cep = '81810260'
+    cep = str(input('CEP: '))
     url = f'https://viacep.com.br/ws/{cep}/json/'
     
     os.system('cls' if os.name == 'nt' else 'clear')
     
-    data = requests.get(url).json
+    data = requests.get(url).json()
     
-    # print(f'Endereço: {data["logradouro"]} - {data["bairro"]} - {data["cidade"]}/{data["uf"]}')
-    print(data["logradouro"])
+    print(f'Endereço: {data["logradouro"]} - {data["bairro"]} - {data["localidade"]}/{data["uf"]}')
     
     input('Clique em qualquer tecla para continuar...')
     os.system('cls' if os.name == 'nt' else 'clear')
