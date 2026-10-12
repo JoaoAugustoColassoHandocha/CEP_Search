@@ -8,7 +8,7 @@ API used for the query: https://viacep.com.br/
 
 import requests, os
 
-clear = os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls' if os.name == 'nt' else 'clear')
 
 try:
     
@@ -17,14 +17,14 @@ try:
     cep = str(input('CEP: '))
     url = f'https://viacep.com.br/ws/{cep}/json/'
     
-    clear
+    os.system('cls' if os.name == 'nt' else 'clear')
     
     data = requests.get(url).json
     
     print(f'Endereço: {data['logradouro']} - {data['bairro']} - {data['cidade']}/{data['uf']}')
     
     input('Clique em qualquer tecla para continuar...')
-    clear
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 except Exception as error:
     
