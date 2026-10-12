@@ -17,14 +17,14 @@ try:
     cep = str(input('CEP: '))
     url = f'viacep.com.br/ws/{cep}/json/'
     
-    clear()
+    clear
     
     data = requests.get(url).json
     
     print(f'Endereço: {data['logradouro']} - {data['bairro']} - {data['cidade']}/{data['uf']}')
     
     input('Clique em qualquer tecla para continuar...')
-    clear()
+    clear
 
 except Exception as error:
     
