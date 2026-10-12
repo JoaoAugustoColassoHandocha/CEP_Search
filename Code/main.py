@@ -8,7 +8,6 @@ API used for the query: https://viacep.com.br/
 
 import requests, os
 
-pause = input('Clique em qualquer tecla para continuar...')
 clear = os.system('cls' if os.name == 'nt' else 'clear')
 
 try:
@@ -24,7 +23,7 @@ try:
     
     print(f'Endereço: {data['logradouro']} - {data['bairro']} - {data['cidade']}/{data['uf']}')
     
-    pause()
+    input('Clique em qualquer tecla para continuar...')
     clear()
 
 except Exception as error:
