@@ -28,6 +28,6 @@ try:
 
 except Exception as error:
     
-    print(f'Erro: {error}')
+    print(f'\nErro: {error}\n')
     input('Clique em qualquer tecla para continuar...')
     os.system('cls' if os.name == 'nt' else 'clear')
