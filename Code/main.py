@@ -9,3 +9,4 @@ import requests, os
 
 pause = input('Clique em qualquer tecla para continuar...')
 clear = os.system('cls' if os.name == 'nt' else 'clear')
+
