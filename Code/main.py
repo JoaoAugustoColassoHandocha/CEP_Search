@@ -23,6 +23,9 @@ try:
     data = requests.get(url).json
     
     print(f'Endereço: {data['logradouro']} - {data['bairro']} - {data['cidade']}/{data['uf']}')
+    
+    pause()
+    clear()
 
 except Exception as error:
     
