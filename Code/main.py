@@ -12,7 +12,10 @@ pause = input('Clique em qualquer tecla para continuar...')
 clear = os.system('cls' if os.name == 'nt' else 'clear')
 
 try:
+    
     print('\nConsulta CEP\n\n\n')
+    
+    cep = 
 
 except Exception in error:
     
