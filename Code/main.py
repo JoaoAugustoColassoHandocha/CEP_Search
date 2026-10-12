@@ -15,7 +15,7 @@ try:
     
     print('\nConsulta CEP\n\n\n')
     
-    cep = 
+    cep = input('CEP: ')
 
 except Exception in error:
     
