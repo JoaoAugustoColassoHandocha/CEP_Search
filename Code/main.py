@@ -14,7 +14,8 @@ try:
     
     print('\nConsulta CEP\n\n\n')
     
-    cep = str(input('CEP: '))
+    # cep = str(input('CEP: '))
+    cep = '81810260'
     url = f'https://viacep.com.br/ws/{cep}/json/'
     
     os.system('cls' if os.name == 'nt' else 'clear')
