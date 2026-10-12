@@ -14,6 +14,6 @@ clear = os.system('cls' if os.name == 'nt' else 'clear')
 try:
     print('\nConsulta CEP\n\n\n')
 
-except Exception in e:
+except Exception in error:
     
-    print(f'Erro: {e}')
+    print(f'Erro: {error}')
