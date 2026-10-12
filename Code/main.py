@@ -17,6 +17,6 @@ try:
     
     cep = input('CEP: ')
 
-except Exception in error:
+except Exception as error:
     
     print(f'Erro: {error}')
