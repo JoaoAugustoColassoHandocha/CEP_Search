@@ -14,7 +14,7 @@ try:
     
     print('\nConsulta CEP\n\n\n')
     
-    cep = int(input('CEP: '))
+    cep = str(input('CEP: '))
     url = f'viacep.com.br/ws/{cep}/json/'
     
     clear()
